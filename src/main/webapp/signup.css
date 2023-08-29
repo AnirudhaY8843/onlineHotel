@@ -1,0 +1,133 @@
+@charset "ISO-8859-1";
+body{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(120deg,#2980b9,#8e44ad);
+    background-image:url("https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWxzfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+    
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   
+    transform: translate(-50%,-50%);
+    width: 500px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.center form{
+    padding: 0 30px;
+    box-sizing: border-box;
+
+}
+
+form .text-feild{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 40px 0;
+}
+
+.text-feild input{
+    width: 80%;
+    padding: 0 10px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+
+
+}
+
+.text-feild label{
+    position: absolute;
+    top:50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.text-feild span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 2px;
+    width: 100%;
+    height: 2px;
+    background: #2691d9;
+}
+
+.text-feild input:focus~label,
+.text-feild input:valid~label{
+     top: -5px;
+     color: #2691d9;
+
+}
+
+.text-feild input:focus~span::before,
+.text-feild input:valid~span::before{
+    width: 100%;
+
+}
+
+.forget{
+    margin: -5px 0 20px 5px;
+    color: #2691d9;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.forget:hover{
+    text-decoration: underline;
+
+}
+
+input[type="submit"]{
+    width: 80%;
+    height: 50px;
+    margin-left: 50px;
+    border: 1px solid;
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    background: #2691d9;
+    cursor: pointer;
+}
+
+.login-link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+
+}
+
+.login-link a{
+    text-decoration: none;
+    color: #2691d9;
+}
+
+.login-link a:hover{
+    text-decoration: underline;
+}
+
